@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: goldenrod;
+        font-size: 15pt;
+        padding: 0 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        align-self: center;
+      }
+
+      .navigation {
+        list-style: none;
+        display: flex;
+        /* flex-direction: column; */
+      }
+
+      .navigation a {
+        display: block;
+        padding: 20px;
+      }
+
+      .navigation a:hover {
+        background-color: yellowgreen;
+      }
+
+      .navigation li:last-child {
+        display: none;
+      }
+
+      .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-right: 1px solid rgb(255, 255, 255, 0.3);
+        border-left: 1px solid rgb(255, 255, 255, 0.3);
+        /* border-left: 1px solid rgb(0, 0, 0, 0.1); */
+      }
+
+      @media (max-width: 600px) {
+        nav a {
+          padding: 10px;
+        }
+
+        nav {
+          position: relative;
+          flex-direction: column;
+        }
+
+        .navigation {
+          flex-direction: column;
+        }
+
+        .navigation a {
+          text-align: center;
+          padding: 10px;
+          border-top: 1px solid rgb(255, 255, 255, 0.3);
+          border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+        }
+
+        .navigation a:last-child {
+          border: none;
+        }
+
+        .navigation li:last-child {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+
+        .responsive .navigation li:not(:last-child) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="responsive">
+      <a href="">Logo</a>
+      <ul class="navigation">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Contact</a></li>
+        <li>
+          <a href=""><i class="fa fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

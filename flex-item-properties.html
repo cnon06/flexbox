@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: flex;
+        flex-direction: row;
+          height: 500px;
+            background-color: blue;
+           
+        }
+        .item
+        {
+            background-color: red;
+            padding: 30px;
+            margin: 20px;
+            color: white;
+            font-size: 15pt;
+            /* flex-grow: 1; */
+            /* flex: 0 1 200px; */
+          
+
+        }
+
+        .item-1
+        {
+           /* flex-grow: 1; */
+           flex: 25%;
+           order: 4;
+        }
+
+        .item-2
+        {
+            /* flex-grow: 2; */
+            flex: 25%;
+            order: 2;
+        }
+
+
+        .item-3
+        {
+            /* flex-basis: 100px; */
+            /* flex-shrink: 0; */
+            flex: 50%;
+            order: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+      
+      
+    </div>
+</body>
+</html>
