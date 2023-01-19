@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .header {
+        padding: 30px;
+        text-align: center;
+        background-color: goldenrod;
+        color: white;
+      }
+
+      .navbar {
+        display: flex;
+        background-color: #333;
+      }
+
+      .navbar a {
+        color: white;
+        padding: 16px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        color: black;
+        background-color: #ddd;
+
+        /* padding: 16px 20px; */
+        /* text-decoration: none; */
+        /* text-align: center; */
+      }
+
+      .placeHolder {
+        background-color: #aaa;
+        width: 100%;
+        
+        margin-top: 10px;
+        padding: 20px;
+        /* margin: 20px; */
+      }
+
+      .main
+      {
+        display: flex;
+      }
+
+      #sidebar
+      {
+        flex: 25%;
+        order:1;
+        padding: 20px;
+        background-color: #f1f1f1;
+      }
+
+      #content
+      {
+        flex: 75%;
+        padding: 20px;
+        
+      }
+
+
+      .box
+      {
+        margin-bottom: 20px;
+        /* padding-left: 20px; */
+      }
+
+      p
+      {
+        margin: 10px 0;
+
+      }
+
+      #footer
+      {
+        background-color: goldenrod;
+        text-align: center;
+        padding: 20px;
+      }
+
+
+      @media (max-width:600px)
+      {
+        .main, .navbar
+        {
+            flex-direction: column;
+        }
+
+        .sidebar
+        {
+            order: -2;
+        }
+        #content
+        {
+            order: -1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Lorem, ipsum.</h1>
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <div class="navbar">
+      <a href="">Link1</a><a href="">Link2</a><a href="">Link3</a
+      ><a href="">Link4</a>
+    </div>
+
+    <div class="main">
+      <div id="sidebar">
+        <div class="box">
+          <h2>Lorem, ipsum.</h2>
+          <div class="placeHolder" style="height: 200px"></div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+            praesentium sapiente earum! Illo architecto odit, dignissimos
+            accusantium maxime repellat quos exercitationem a nisi voluptatum
+            excepturi illum molestias nostrum! Eveniet, molestias.
+          </p>
+        </div>
+
+        <div class="placeHolder" style="height: 50px"></div>
+        <div class="placeHolder" style="height: 50px"></div>
+        <div class="placeHolder" style="height: 50px"></div>
+      </div>
+      <div id="content">
+        <div class="box">
+            <h2>Lorem, ipsum.</h2>
+            <div class="placeHolder" style="height: 200px"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+              praesentium sapiente earum! Illo architecto odit, dignissimos
+              accusantium maxime repellat quos exercitationem a nisi voluptatum
+              excepturi illum molestias nostrum! Eveniet, molestias.
+            </p>
+          </div>
+
+          <div class="box">
+            <h2>Lorem, ipsum.</h2>
+            <div class="placeHolder" style="height: 200px"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+              praesentium sapiente earum! Illo architecto odit, dignissimos
+              accusantium maxime repellat quos exercitationem a nisi voluptatum
+              excepturi illum molestias nostrum! Eveniet, molestias.
+            </p>
+          </div>
+
+          <div class="box">
+            <h2>Lorem, ipsum.</h2>
+            <div class="placeHolder" style="height: 200px"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+              praesentium sapiente earum! Illo architecto odit, dignissimos
+              accusantium maxime repellat quos exercitationem a nisi voluptatum
+              excepturi illum molestias nostrum! Eveniet, molestias.
+            </p>
+          </div>
+
+          <div class="box">
+            <h2>Lorem, ipsum.</h2>
+            <div class="placeHolder" style="height: 200px"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+              praesentium sapiente earum! Illo architecto odit, dignissimos
+              accusantium maxime repellat quos exercitationem a nisi voluptatum
+              excepturi illum molestias nostrum! Eveniet, molestias.
+            </p>
+          </div>
+      </div>
+    </div>
+
+
+    <div id="footer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia vitae, reprehenderit veritatis quisquam officia, et similique culpa aperiam quis accusantium consectetur harum sed perferendis. Consequuntur enim eaque aut doloremque delectus!
+    </div>
+  </body>
+</html>
